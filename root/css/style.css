@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 75px 160px 75px 165px; 
+}
+
+header div nav ul {
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+header div nav ul li a{
+    text-decoration: none;
+}
+
+header div button {
+  
+}
