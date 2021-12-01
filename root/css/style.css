@@ -6,7 +6,6 @@
 }
 body {
   font-family: "Be Vietnam Pro";
-
 }
 
 header {
@@ -16,20 +15,23 @@ header {
   justify-content: space-between;
   padding: 65px 165px 65px 165px;
 }
-header div{
+header div {
   display: flex;
   align-items: center;
   padding: 10px 0px 10px 0px;
 }
-
 
 header nav ul {
   display: flex;
   list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
   margin: 0px 14px 0px 14px;
+}
+
+header nav ul li:nth-child(6) {
+  margin-left: 224px;
 }
 
 a {
@@ -40,41 +42,42 @@ a {
   line-height: 176.1%;
 }
 
-button.getStarted {
-  background-color: #F3603B;
+button.get-started {
+  background-color: #f3603b;
   border: none;
   border-radius: 50px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 13px;
-  padding: 12px 30px 12px 30px;
+  padding: 12px 30px;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
-header i{
+header i {
   display: none;
 }
 
-main section:nth-child(1){
+main section:nth-child(1) {
   display: flex;
   justify-content: center;
   padding: 39px 146px 0px 165px;
-
 }
-main section:nth-child(1) div:nth-child(1)  {
+main section:nth-child(1) div:nth-child(1) {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
-  margin: 71px 130px 80px 0px;
+  margin: 71px 50px 80px 0px;
 }
 
 main section:nth-child(1) div:nth-child(1) p:nth-child(1) {
   font-size: 58px;
-  color:#232C50;
-  font-weight: bold;
+  color: #232c50;
+  font-weight: 700;
   margin-bottom: 28px;
 }
+
 main section:nth-child(1) div:nth-child(1) p:nth-child(2) {
   font-size: 16px;
+  font-weight: 500;
   color: #000000;
   text-align: justify;
   margin: 0px 150px 28px 0px;
@@ -85,12 +88,123 @@ main section:nth-child(1) div:nth-child(1) button {
 }
 
 main section:nth-child(1) div:nth-child(2) {
+  margin-top: 39px;
 }
 
+main section:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  padding: 99px 169px 0px 165px;
+}
+/* main section:nth-child(2) article:nth-child(1){
+  background-color: cadetblue;
+  
+} */
+main section:nth-child(2) article:nth-child(1) h2 {
+  color: #232851;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41px;
+}
 
+main section:nth-child(2) article:nth-child(1) p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 36px 96px 0px 0px;
+  line-height: 24.18px;
+}
+
+main section:nth-child(2) article:nth-child(2) {
+  padding-left: 125px;
+}
+
+main section:nth-child(2) article:nth-child(2) div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 27px;
+}
+
+main section:nth-child(2) article:nth-child(2) div span {
+  background-color: #f3603b;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 23.38px;
+}
+
+main section:nth-child(2) article:nth-child(2) div h5 {
+  margin-left: 23px;
+  color: #323851;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+main section:nth-child(2) article:nth-child(2) div div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 4.5px;
+}
+
+main section:nth-child(2) article:nth-child(2) div p {
+  margin-left: calc(70px + 23px);
+  font-size: 16.3px;
+  font-weight: 500;
+  color: #b3b2b7;
+  line-height: 25px;
+}
+
+main section:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  margin: 124px 71px 180px 71px;
+}
+
+main section:nth-child(3) h2 {
+  color: #242e53;
+  font-size: 39.21px;
+  font-weight: 700;
+  line-height: 61.41px;
+}
+
+main section:nth-child(3) div {
+  display: flex;
+  padding-top: 74px;
+  background-color: orangered;
+}
+
+main section:nth-child(3) div article{
+  position: relative;
+  width: 426px;
+  background-color: #FAFAFA;
+}
+
+main section:nth-child(3) div article img{
+  position: absolute;
+  top: calc(194px - (70px / 2));
+  left: calc(50% - (70px / 2));
+}
+
+main section:nth-child(3) div article span{
+ color: #3F4868;
+ font-size: 16.07px;
+ font-weight: 700;
+ line-height: 25.17px;
+}
+
+main section:nth-child(3) div article p{
+ color: #B9B9C1;
+ font-size: 16px;
+ font-weight: 600;
+ line-height: 25.06px;
+}
 
 @media (min-width: 375px) and (max-width: 720px) {
-  
 }
 
 #mobileMenu {
