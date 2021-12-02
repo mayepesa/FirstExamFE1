@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>Manage</title>
 </head>
@@ -27,6 +30,7 @@
             </ul>
 
         </nav>
+        <!-- para mobile hay que ocultar el nav -->
 
         <i class="fa-solid fa-bars"></i>
 
@@ -88,7 +92,7 @@
 
         </section>
         <section>
-            <h2>What they've said</h2>
+            <h3>What they've said</h3>
             <div>
                 <article class="review">
                     <img src="./img/avatar-anisha.png" alt="">
@@ -109,46 +113,68 @@
                         stop recommending them to everyone i talk to!”</p>
                 </article>
             </div>
-            <button>Get Started</button>
+            <button class="get-started">Get Started</button>
+
             <!-- los puntos pueden ser imagen que mandaron en wpp, esta mas grandesito, hay que ponerle tamaño fijo -->
 
         </section>
         <div>
+            <h3>Simplify hoy your team words today.</h3>
+            <div>
+                <button class="get-started-white get-started">Get Started</button>
 
+            </div>
         </div>
 
     </main>
     <footer>
-
         <div>
-            <img src="" alt="">
+            <div class="logo-social">
+
+                <img src="./img/white-logo.png" alt="">
+                <div>
+                    <i class="fab fa-facebook-square fa-lg"></i>
+
+
+                    <i class="fab fa-youtube fa-lg"></i>
+                    <i class="fab fa-twitter fa-lg"></i>
+                    <i class="fab fa-pinterest fa-lg"></i>
+                    <i class="fab fa-instagram fa-lg"></i>
+                    <!-- icons hay que cmbiar color de iconos cuando pasa el cursor-->
+                </div>
+
+            </div>
+            <!-- usar reverse para mobile  -->
+            <div class="nav-lists">
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Pricing</li>
+                        <li>Products</li>
+                        <li>About Us</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>Careers</li>
+                        <li>Community</li>
+                        <li>Privacy Policy</li>
+
+                    </ul>
+                </nav>
+
+            </div>
             <div>
-                <!-- icons hay que cmbiar color de iconos cuando pasa el cursor-->
+                <div>
+                    <form action=""></form>
+                    <input type="submit" />
+
+                </div>
+                <span>Copyright 2020. All Rights Reserved</span>
             </div>
 
         </div>
-        <!-- usar reverse para mobile  -->
-        <div>
-            <nav>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul></ul>
-                <ul></ul>
-                <ul></ul>
-            </nav>
 
-        </div>
-        <div>
-            <form action=""></form>
-
-        </div>
-        <span>Copyright 2020. All Rights Reserved</span>
         <!-- cambiar con un order, si pongo 1 se va al final del elemento y para el texto de copyright poner display: none y ponerlo abajo -->
     </footer>
 
