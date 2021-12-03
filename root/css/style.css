@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
 }
+
 body {
   font-family: "Be Vietnam Pro";
 }
@@ -15,10 +16,15 @@ header {
   justify-content: space-between;
   padding: 65px 165px 65px 165px;
 }
+
 header div {
   display: flex;
   align-items: center;
   padding: 10px 0px 10px 0px;
+}
+
+header div h1{
+  display: none;
 }
 
 header nav ul {
@@ -52,30 +58,31 @@ button.get-started {
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
-header i {
+header i.menu{
   display: none;
 }
 
-main section:nth-child(1) {
+main section.home {
   display: flex;
   justify-content: center;
   padding: 39px 146px 0px 165px;
 }
-main section:nth-child(1) div:nth-child(1) {
+
+main section.home div.home-desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 71px 50px 80px 0px;
 }
 
-main section:nth-child(1) div:nth-child(1) p:nth-child(1) {
+main section.home div.home-desc p.title {
   font-size: 58px;
   color: #232c50;
   font-weight: 700;
   margin-bottom: 28px;
 }
 
-main section:nth-child(1) div:nth-child(1) p:nth-child(2) {
+main section.home div.home-desc p.text {
   font-size: 16px;
   font-weight: 500;
   line-height: 26.01px;
@@ -84,28 +91,28 @@ main section:nth-child(1) div:nth-child(1) p:nth-child(2) {
   margin: 0px 150px 28px 0px;
 }
 
-main section:nth-child(1) div:nth-child(1) button {
+main section.home div.home-desc button {
   align-self: flex-start;
 }
 
-main section:nth-child(1) div:nth-child(2) {
+main section.home div.home-image{
   margin-top: 39px;
 }
 
-main section:nth-child(2) {
+main section.about {
   display: flex;
   justify-content: center;
   padding: 99px 169px 0px 165px;
 }
 
-main section:nth-child(2) article:nth-child(1) h2 {
+main section.about article.about-question h2 {
   color: #232851;
   font-size: 36px;
   font-weight: 700;
   line-height: 41px;
 }
 
-main section:nth-child(2) article:nth-child(1) p {
+main section.about article.about-question p {
   color: #000000;
   font-size: 16px;
   font-weight: 500;
@@ -113,17 +120,17 @@ main section:nth-child(2) article:nth-child(1) p {
   line-height: 24.18px;
 }
 
-main section:nth-child(2) article:nth-child(2) {
+main section.about article.functions {
   padding-left: 125px;
 }
 
-main section:nth-child(2) article:nth-child(2) div {
+main section.about article.functions div {
   display: flex;
   flex-direction: column;
   margin-bottom: 27px;
 }
 
-main section:nth-child(2) article:nth-child(2) div span {
+main section.about article.functions div span {
   background-color: #f3603b;
   padding: 10px 25px;
   border-radius: 30px;
@@ -133,21 +140,21 @@ main section:nth-child(2) article:nth-child(2) div span {
   line-height: 23.38px;
 }
 
-main section:nth-child(2) article:nth-child(2) div h5 {
+main section.about article.functions div h5 {
   margin-left: 23px;
   color: #323851;
   font-size: 16px;
   font-weight: 700;
 }
 
-main section:nth-child(2) article:nth-child(2) div div {
+main section.about article.functions div div {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 4.5px;
 }
 
-main section:nth-child(2) article:nth-child(2) div p {
+main section.about article.functions div p {
   margin-left: calc(70px + 23px);
   font-size: 16.3px;
   font-weight: 500;
@@ -155,13 +162,13 @@ main section:nth-child(2) article:nth-child(2) div p {
   line-height: 25px;
 }
 
-main section:nth-child(3) {
+main section.testimonies {
   display: flex;
   flex-direction: column;
   margin: 124px 71px 180px 71px;
 }
 
-main section:nth-child(3) h3 {
+main section.testimonies h3 {
   color: #242e53;
   font-size: 39.21px;
   font-weight: 700;
@@ -169,12 +176,12 @@ main section:nth-child(3) h3 {
   line-height: 61.41px;
 }
 
-main section:nth-child(3) div {
+main section.testimonies div {
   display: flex;
   justify-content: space-between;
 }
 
-main section:nth-child(3) div article {
+main section.testimonies div article {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -184,13 +191,13 @@ main section:nth-child(3) div article {
   margin-top: calc(45px + 74px);
 }
 
-main section:nth-child(3) div article img {
+main section.testimonies div article img {
   position: absolute;
   bottom: calc(100% - (70px / 2));
   left: calc(50% - (70px / 2));
 }
 
-main section:nth-child(3) div article span {
+main section.testimonies div article span {
   color: #3f4868;
   font-size: 16.07px;
   font-weight: 700;
@@ -198,7 +205,7 @@ main section:nth-child(3) div article span {
   margin-top: 56px;
 }
 
-main section:nth-child(3) div article p {
+main section.testimonies div article p {
   color: #b9b9c1;
   font-size: 16px;
   font-weight: 600;
@@ -207,11 +214,11 @@ main section:nth-child(3) div article p {
   text-align: center;
 }
 
-main section:nth-child(3) img.circles {
+main section.testimonies img.circles {
   display: none;
 }
 
-main section:nth-child(3) button {
+main section.testimonies button {
   margin-top: 45px;
   align-self: center;
 }
@@ -334,12 +341,10 @@ footer > div div:nth-child(3) span {
 
 @media (max-width: 375px) {
   header {
-    display: flex;
     padding: 40px 30px 0px 30px;
   }
 
   header div {
-    display: flex;
     padding: 0px;
   }
 
@@ -347,70 +352,61 @@ footer > div div:nth-child(3) span {
     display: none;
   }
 
-  header i {
+  header i.menu {
+    display: block;
     color: #323851;
   }
 
-  main section:nth-child(1) {
-    display: flex;
+  main section.home{
     padding: 40px 30px 40px 30px;
     flex-wrap: wrap-reverse;
   }
 
-  main section:nth-child(1) div:nth-child(2) img {
-    width: 100%;
-  }
-
-  main section:nth-child(1) div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
+  main section.home div.home-desc {
     justify-content: space-between;
     align-items: center;
     margin: 0px;
   }
 
-  main section:nth-child(1) div:nth-child(1) p:nth-child(1) {
+  main section.home div.home-desc p.title {
     font-size: 36px;
-    color: #232c50;
-    font-weight: 700;
     margin-bottom: 15px;
     text-align: center;
   }
 
-  main section:nth-child(1) div:nth-child(1) p:nth-child(2) {
-    font-size: 16px;
-    font-weight: 500;
+  main section.home div.home-desc p.text {
     color: #b3b2b7;
-    text-align: justify;
     margin: 0px 0px 35px 0px;
   }
 
-  main section:nth-child(1) div:nth-child(1) button {
+  main section.home div.home-desc button {
     align-self: center;
   }
 
-  main section:nth-child(2) {
-    display: flex;
+  main section.home div.home-image img {
+    width: 100%;
+  }
+
+  main section.about {
     flex-direction: column;
     padding: 40px 0px 40px 0px;
     flex-wrap: wrap;
   }
 
-  main section:nth-child(2) article:nth-child(1) {
+  main section.about article.about-question {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  main section:nth-child(2) article:nth-child(1) h2 {
+  main section.about article.about-question h2 {
     font-size: 30px;
     text-align: center;
     margin: 0px 20px;
   }
 
-  main section:nth-child(2) article:nth-child(1) p {
-    color: #000000;
+  main section.about article.about-question p {
     font-size: 14px;
     padding: 10px 0px;
     color: #b3b2b7;
@@ -418,75 +414,68 @@ footer > div div:nth-child(3) span {
     margin: 0px 20px;
   }
 
-  main section:nth-child(2) article:nth-child(2) {
+  main section.about article.functions {
     padding: 30px 0px 0px 15px;
   }
 
-  main section:nth-child(2) article:nth-child(2) div {
+  main section.about article.functions div {
     margin-bottom: 40px;
     background-color: white;
   }
 
-  main section:nth-child(2) article:nth-child(2) div div {
-    background-color: #f86b4828;
-    border-radius: 20px 0px 0px 20px;
-  }
-
-  main section:nth-child(2) article:nth-child(2) div span {
+  main section.about article.functions div span {
     padding: 8px 25px;
     border-radius: 20px;
   }
 
-  main section:nth-child(2) article:nth-child(2) div h5 {
+  main section.about article.functions div h5 {
     font-size: 14px;
   }
 
-  main section:nth-child(2) article:nth-child(2) div p {
+  main section.about article.functions div div {
+    background-color: #f86b4828;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  main section.about article.functions div p {
     margin: 10px 0px 0px 2px;
     font-size: 14px;
-    font-weight: 500;
-    color: #b3b2b7;
     line-height: 30px;
   }
 
-  main section:nth-child(3) {
-    display: flex;
-    flex-direction: column;
+  main section.testimonies {
     margin: 24px 0px 0px 0px;
   }
-  main section:nth-child(3) h3 {
+
+  main section.testimonies h3 {
     font-size: 35px;
   }
-  main section:nth-child(3) div {
-    display: flex;
-    justify-content: space-between;
-  }
 
-  main section:nth-child(3) div article {
+  main section.testimonies div article {
     margin: 90px 20px 0px 20px;
   }
-  main section:nth-child(3) div article:nth-child(1) {
-    display: none;
-  }
-  main section:nth-child(3) div article:nth-child(3) {
+
+  main section.testimonies div article.review-one {
     display: none;
   }
 
-  main section:nth-child(3) div article p {
+  main section.testimonies div article.review-three {
+    display: none;
+  }
+
+  main section.testimonies div article p {
     font-size: 14px;
-    font-weight: 600;
     line-height: 26px;
     padding: 21px 18px 39px 18px;
   }
 
-  main section:nth-child(3) img {
+  main section.testimonies img {
     width: 30%;
     align-self: center;
   }
 
-  main section:nth-child(3) button {
+  main section.testimonies button {
     margin-top: 0px;
-    align-self: center;
   }
 
   main > div {
@@ -502,22 +491,20 @@ footer > div div:nth-child(3) span {
     text-align: center;
   }
 
-  main > div div .get-started-white {
+  main > div div button.get-started-white {
     margin-bottom: 75px;
   }
 
   footer {
     padding: 40px 20px 30px 20px;
   }
+
   footer > div {
-    display: flex;
     flex-direction: column-reverse;
   }
 
   footer div div.logo-social {
-    display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -533,7 +520,6 @@ footer > div div:nth-child(3) span {
   footer div div.nav-lists {
     margin: 40px 25px;
     justify-content: space-between;
-
   }
 
   footer > div div nav:nth-child(1) {
