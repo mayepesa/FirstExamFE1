@@ -78,6 +78,7 @@ main section:nth-child(1) div:nth-child(1) p:nth-child(1) {
 main section:nth-child(1) div:nth-child(1) p:nth-child(2) {
   font-size: 16px;
   font-weight: 500;
+  line-height: 26.01px;
   color: #000000;
   text-align: justify;
   margin: 0px 150px 28px 0px;
@@ -96,10 +97,7 @@ main section:nth-child(2) {
   justify-content: center;
   padding: 99px 169px 0px 165px;
 }
-/* main section:nth-child(2) article:nth-child(1){
-  background-color: cadetblue;
-  
-} */
+
 main section:nth-child(2) article:nth-child(1) h2 {
   color: #232851;
   font-size: 36px;
@@ -163,7 +161,7 @@ main section:nth-child(3) {
   margin: 124px 71px 180px 71px;
 }
 
-main section:nth-child(3) h2 {
+main section:nth-child(3) h3 {
   color: #242e53;
   font-size: 39.21px;
   font-weight: 700;
@@ -209,6 +207,10 @@ main section:nth-child(3) div article p{
  text-align: center;
 }
 
+main section:nth-child(3) img{
+  display: none;
+}
+
 main section:nth-child(3) button{
   margin-top: 45px;
   align-self: center;
@@ -242,7 +244,6 @@ footer{
 }
 
 footer>div{
-  background-color: gray;
   display: flex;
   justify-content: space-between;
 
@@ -287,18 +288,248 @@ footer>div div nav ul li{
   margin-bottom: 12px;
 }
 
+footer>div div:nth-child(3){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+input[type="text"]{
+  width: 201px;
+  border-radius: 50px;
+  padding: 12.5px 10px;
+  font-size: 13.18px;
+  font-weight: 600;
+  line-height: 19.26px;
+  color: #A0A0A0;
+  border: none;
+  font-family: "Be Vietnam Pro";
+}
 
+form{
+  display: flex;
+  justify-content: space-between;
+}
 
+button[type="submit"]{
+  background-color: #F3603B;
+  padding: 11.5px 22.5px;
+  border-radius: 50px;
+  font-family: "Be Vietnam Pro";
+  border: none;
+  color:#FFFFFF;
+  margin-left: 9px;
+}
 
+footer>div div:nth-child(3) span{
+  align-self: flex-end;
+  color: #8C8C94;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 18.26px;
+}
 
-@media (min-width: 375px) and (max-width: 720px) {
+@media (max-width: 375px) {
+  header{
+    display: flex;
+    padding: 40px 30px 0px 30px;
+  }
 
-  /* header i{
+  header div {
+    display: flex;
+    padding: 0px;
+  }
+
+  header nav ul{
+    display: none;
+  }
+
+  header i{
+    color: #323851;
+  }
+ 
+  main section:nth-child(1) {
+    display: flex;
+    padding: 40px 30px 40px 30px;
+    flex-wrap: wrap-reverse;
+  }
+  
+  main section:nth-child(1) div:nth-child(2) img{
+    width: 100%;
+  }
+
+  main section:nth-child(1) div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+  }
+
+  main section:nth-child(1) div:nth-child(1) p:nth-child(1) {
+    font-size: 36px;
+    color: #232c50;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  main section:nth-child(1) div:nth-child(1) p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+    color: #B3B2B7;
+    text-align: justify;
+    margin: 0px 0px 35px 0px;
+  }
+
+  main section:nth-child(1) div:nth-child(1) button {
+    align-self: center;
+  }
+
+  main section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px 40px 0px;
+    flex-wrap: wrap;
+  }
+
+  main section:nth-child(2) article:nth-child(1){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section:nth-child(2) article:nth-child(1) h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 20px;
+  }
+
+  main section:nth-child(2) article:nth-child(1) p {
+    color: #000000;
+    font-size: 14px;
+    padding: 10px 0px;
+    color: #B3B2B7;
+    text-align: center;
+    margin: 0px 20px;
+
+  }
+
+  main section:nth-child(2) article:nth-child(2) {
+    padding: 30px 0px 0px 15px;
+  }
+  
+  main section:nth-child(2) article:nth-child(2) div {
+    margin-bottom: 40px;
+    background-color: white;
+  }
+
+  main section:nth-child(2) article:nth-child(2) div div {
     
-  } */
+    background-color: #f86b4828;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  main section:nth-child(2) article:nth-child(2) div span {
+    padding: 8px 25px;
+    border-radius: 20px;
+  }
+
+  main section:nth-child(2) article:nth-child(2) div h5 {
+    font-size: 14px;
+  }
+  
+  main section:nth-child(2) article:nth-child(2) div p {
+    margin: 10px 0px 0px 2px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #b3b2b7;
+    line-height: 30px;
+  }
+
+  main section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0px 0px 0px;
+  }
+  main section:nth-child(3) h3 {
+    font-size: 35px;
+  }
+  main section:nth-child(3) div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main section:nth-child(3) div article{
+    margin: 90px 20px 0px 20px;
+  }
+  main section:nth-child(3) div article:nth-child(1){
+    display: none;
+  }
+  main section:nth-child(3) div article:nth-child(3){
+    display: none;
+  }
+
+  main section:nth-child(3) div article p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 21px 18px 39px 18px;
+   }
+
+   main section:nth-child(3) img{
+     width: 30%;
+     align-self: center;
+   }
+
+   main section:nth-child(3) button{
+    margin-top: 0px;
+    align-self: center;
+  }
+
+  main>div{
+    margin-top: 80px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main>div h3{
+    font-size: 38px;
+    margin: 75px 12px 25px 12px;
+    text-align: center;
+  }
+
+  main>div div .get-started-white{
+    margin-bottom: 75px;
+  }
+
+  footer{
+    padding: 40px 20px 30px 20px;
+  }
+  footer>div{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: blue;
+  }
+
+  footer div div.logo-social{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color:black;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  footer div div.logo-social div{
+    margin-bottom: 50px;
+  }
+
+  footer div div.logo-social div {
+  }
+
+
 }
 
-#mobileMenu {
-  display: none;
-}
