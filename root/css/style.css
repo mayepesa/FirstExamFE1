@@ -20,10 +20,10 @@ header {
 header div {
   display: flex;
   align-items: center;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px;
 }
 
-header div h1{
+header div h1 {
   display: none;
 }
 
@@ -34,6 +34,10 @@ header nav ul {
 
 header nav ul li {
   margin: 0px 14px 0px 14px;
+}
+
+a:hover {
+  color: #f3603b;
 }
 
 header nav ul li:nth-child(6) {
@@ -58,7 +62,11 @@ button.get-started {
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
-header i.menu{
+button.get-started:hover {
+  background-color: #f3603b9f;
+}
+
+header i.menu {
   display: none;
 }
 
@@ -95,7 +103,7 @@ main section.home div.home-desc button {
   align-self: flex-start;
 }
 
-main section.home div.home-image{
+main section.home div.home-image {
   margin-top: 39px;
 }
 
@@ -138,6 +146,10 @@ main section.about article.functions div span {
   font-weight: 700;
   color: #ffffff;
   line-height: 23.38px;
+}
+
+main section.about article.functions div span:hover{
+  transform: rotate(10deg);
 }
 
 main section.about article.functions div h5 {
@@ -244,7 +256,9 @@ main > div div .get-started-white {
   background-color: white;
   color: #f3603b;
 }
-
+main > div div .get-started-white:hover {
+  background-color: #ffcfc3;
+}
 footer {
   background-color: #1e1e26;
   padding: 52.93px 164.79px 52.93px 170.88px;
@@ -263,7 +277,7 @@ footer div div.logo-social {
   padding-bottom: calc(69.32px - 52.93px);
 }
 
-footer div div.logo-social span{
+footer div div.logo-social span {
   display: none;
 }
 
@@ -275,6 +289,11 @@ footer div div.logo-social div {
 
 footer div div.logo-social div i {
   color: #ffffff;
+}
+
+footer div div.logo-social div i:hover {
+  color: #f3613c;
+  transform: scale(1.2);
 }
 
 footer div div.nav-lists {
@@ -290,12 +309,12 @@ footer > div div nav ul {
   padding: 0px;
 }
 
-footer > div div nav ul li {
+footer > div div nav ul li a {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 23.38px;
-  margin-bottom: 12px;
+  line-height: 25.38px;
+  margin-bottom: 15px;
 }
 
 footer > div div:nth-child(3) {
@@ -331,6 +350,10 @@ button[type="submit"] {
   margin-left: 9px;
 }
 
+button[type="submit"]:hover {
+  background-color: #ec8970;
+}
+
 footer > div div:nth-child(3) span {
   align-self: flex-end;
   color: #8c8c94;
@@ -352,12 +375,16 @@ footer > div div:nth-child(3) span {
     display: none;
   }
 
+  header i.menu:hover {
+    transform: scale(1.1);
+  }
+
   header i.menu {
     display: block;
     color: #323851;
   }
 
-  main section.home{
+  main section.home {
     padding: 40px 30px 40px 30px;
     flex-wrap: wrap-reverse;
   }
@@ -536,7 +563,7 @@ footer > div div:nth-child(3) span {
     text-transform: uppercase;
   }
 
-  footer > div div:nth-child(3) span{
+  footer > div div:nth-child(3) span {
     display: none;
   }
 
@@ -546,12 +573,12 @@ footer > div div:nth-child(3) span {
     justify-content: space-between;
   }
 
-  footer div div.logo-social span{
+  footer div div.logo-social span {
     display: block;
     margin-top: 40px;
-    color: #8C8C94;
+    color: #8c8c94;
     font-weight: 500;
     text-align: center;
     font-size: 13px;
-  } 
+  }
 }
