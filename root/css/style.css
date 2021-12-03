@@ -174,50 +174,50 @@ main section:nth-child(3) div {
   justify-content: space-between;
 }
 
-main section:nth-child(3) div article{
+main section:nth-child(3) div article {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 415px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   margin-top: calc(45px + 74px);
 }
 
-main section:nth-child(3) div article img{
+main section:nth-child(3) div article img {
   position: absolute;
   bottom: calc(100% - (70px / 2));
   left: calc(50% - (70px / 2));
 }
 
-main section:nth-child(3) div article span{
- color: #3F4868;
- font-size: 16.07px;
- font-weight: 700;
- line-height: 25.17px;
- margin-top: 56px;
+main section:nth-child(3) div article span {
+  color: #3f4868;
+  font-size: 16.07px;
+  font-weight: 700;
+  line-height: 25.17px;
+  margin-top: 56px;
 }
 
-main section:nth-child(3) div article p{
- color: #B9B9C1;
- font-size: 16px;
- font-weight: 600;
- line-height: 25.06px;
- padding: 21px 28px 39px 27px;
- text-align: center;
+main section:nth-child(3) div article p {
+  color: #b9b9c1;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.06px;
+  padding: 21px 28px 39px 27px;
+  text-align: center;
 }
 
-main section:nth-child(3) img{
+main section:nth-child(3) img.circles {
   display: none;
 }
 
-main section:nth-child(3) button{
+main section:nth-child(3) button {
   margin-top: 45px;
   align-self: center;
 }
 
-main>div{
-  background-color: #F3613C;
+main > div {
+  background-color: #f3613c;
   margin-top: 180px;
   padding: 64px 165px;
   display: flex;
@@ -225,31 +225,30 @@ main>div{
   align-items: center;
 }
 
-main>div h3{
-  color: #FFFFFF;
+main > div h3 {
+  color: #ffffff;
   font-size: 40px;
   font-weight: 700;
   line-height: 47.84px;
   margin-right: 530px;
 }
-main>div div .get-started-white{
+main > div div .get-started-white {
   width: 126.48px;
   background-color: white;
-  color: #F3603B;
+  color: #f3603b;
 }
 
-footer{
-  background-color: #1E1E26;
+footer {
+  background-color: #1e1e26;
   padding: 52.93px 164.79px 52.93px 170.88px;
 }
 
-footer>div{
+footer > div {
   display: flex;
   justify-content: space-between;
-
 }
 
-footer div div.logo-social{
+footer div div.logo-social {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -257,80 +256,84 @@ footer div div.logo-social{
   padding-bottom: calc(69.32px - 52.93px);
 }
 
-footer div div.logo-social div{
+footer div div.logo-social span{
+  display: none;
+}
+
+footer div div.logo-social div {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-footer div div.logo-social div i{
-  color: #FFFFFF;
+footer div div.logo-social div i {
+  color: #ffffff;
 }
 
-footer div div.nav-lists{
+footer div div.nav-lists {
   display: flex;
 }
 
-footer>div div nav:nth-child(1){
+footer > div div nav:nth-child(1) {
   margin-right: 213px;
 }
 
-footer>div div nav ul{
+footer > div div nav ul {
   list-style-type: none;
-  padding: 0px ;
-  
+  padding: 0px;
 }
 
-footer>div div nav ul li{
-  color: #FFFFFF;
+footer > div div nav ul li {
+  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   line-height: 23.38px;
   margin-bottom: 12px;
 }
 
-footer>div div:nth-child(3){
+footer > div div:nth-child(3) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-input[type="text"]{
+input[type="text"] {
   width: 201px;
   border-radius: 50px;
   padding: 12.5px 10px;
   font-size: 13.18px;
   font-weight: 600;
   line-height: 19.26px;
-  color: #A0A0A0;
+  color: #a0a0a0;
   border: none;
   font-family: "Be Vietnam Pro";
 }
 
-form{
+form {
   display: flex;
   justify-content: space-between;
 }
 
-button[type="submit"]{
-  background-color: #F3603B;
+button[type="submit"] {
+  background-color: #f3603b;
   padding: 11.5px 22.5px;
   border-radius: 50px;
   font-family: "Be Vietnam Pro";
   border: none;
-  color:#FFFFFF;
+  color: #ffffff;
   margin-left: 9px;
 }
 
-footer>div div:nth-child(3) span{
+footer > div div:nth-child(3) span {
   align-self: flex-end;
-  color: #8C8C94;
+  color: #8c8c94;
   font-size: 12.5px;
   font-weight: 500;
   line-height: 18.26px;
 }
 
 @media (max-width: 375px) {
-  header{
+  header {
     display: flex;
     padding: 40px 30px 0px 30px;
   }
@@ -340,21 +343,21 @@ footer>div div:nth-child(3) span{
     padding: 0px;
   }
 
-  header nav ul{
+  header nav ul {
     display: none;
   }
 
-  header i{
+  header i {
     color: #323851;
   }
- 
+
   main section:nth-child(1) {
     display: flex;
     padding: 40px 30px 40px 30px;
     flex-wrap: wrap-reverse;
   }
-  
-  main section:nth-child(1) div:nth-child(2) img{
+
+  main section:nth-child(1) div:nth-child(2) img {
     width: 100%;
   }
 
@@ -377,7 +380,7 @@ footer>div div:nth-child(3) span{
   main section:nth-child(1) div:nth-child(1) p:nth-child(2) {
     font-size: 16px;
     font-weight: 500;
-    color: #B3B2B7;
+    color: #b3b2b7;
     text-align: justify;
     margin: 0px 0px 35px 0px;
   }
@@ -393,7 +396,7 @@ footer>div div:nth-child(3) span{
     flex-wrap: wrap;
   }
 
-  main section:nth-child(2) article:nth-child(1){
+  main section:nth-child(2) article:nth-child(1) {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -410,23 +413,21 @@ footer>div div:nth-child(3) span{
     color: #000000;
     font-size: 14px;
     padding: 10px 0px;
-    color: #B3B2B7;
+    color: #b3b2b7;
     text-align: center;
     margin: 0px 20px;
-
   }
 
   main section:nth-child(2) article:nth-child(2) {
     padding: 30px 0px 0px 15px;
   }
-  
+
   main section:nth-child(2) article:nth-child(2) div {
     margin-bottom: 40px;
     background-color: white;
   }
 
   main section:nth-child(2) article:nth-child(2) div div {
-    
     background-color: #f86b4828;
     border-radius: 20px 0px 0px 20px;
   }
@@ -439,7 +440,7 @@ footer>div div:nth-child(3) span{
   main section:nth-child(2) article:nth-child(2) div h5 {
     font-size: 14px;
   }
-  
+
   main section:nth-child(2) article:nth-child(2) div p {
     margin: 10px 0px 0px 2px;
     font-size: 14px;
@@ -461,75 +462,110 @@ footer>div div:nth-child(3) span{
     justify-content: space-between;
   }
 
-  main section:nth-child(3) div article{
+  main section:nth-child(3) div article {
     margin: 90px 20px 0px 20px;
   }
-  main section:nth-child(3) div article:nth-child(1){
+  main section:nth-child(3) div article:nth-child(1) {
     display: none;
   }
-  main section:nth-child(3) div article:nth-child(3){
+  main section:nth-child(3) div article:nth-child(3) {
     display: none;
   }
 
-  main section:nth-child(3) div article p{
+  main section:nth-child(3) div article p {
     font-size: 14px;
     font-weight: 600;
     line-height: 26px;
     padding: 21px 18px 39px 18px;
-   }
+  }
 
-   main section:nth-child(3) img{
-     width: 30%;
-     align-self: center;
-   }
+  main section:nth-child(3) img {
+    width: 30%;
+    align-self: center;
+  }
 
-   main section:nth-child(3) button{
+  main section:nth-child(3) button {
     margin-top: 0px;
     align-self: center;
   }
 
-  main>div{
+  main > div {
     margin-top: 80px;
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
   }
 
-  main>div h3{
+  main > div h3 {
     font-size: 38px;
     margin: 75px 12px 25px 12px;
     text-align: center;
   }
 
-  main>div div .get-started-white{
+  main > div div .get-started-white {
     margin-bottom: 75px;
   }
 
-  footer{
+  footer {
     padding: 40px 20px 30px 20px;
   }
-  footer>div{
+  footer > div {
     display: flex;
     flex-direction: column-reverse;
-    background-color: blue;
   }
 
-  footer div div.logo-social{
+  footer div div.logo-social {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    background-color:black;
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  
-  footer div div.logo-social div{
+
+  footer div div.logo-social div {
     margin-bottom: 50px;
   }
 
-  footer div div.logo-social div {
+  footer div div.logo-social img {
+    align-self: center;
   }
 
+  footer div div.nav-lists {
+    margin: 40px 25px;
+    justify-content: space-between;
 
+  }
+
+  footer > div div nav:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  input[type="text"] {
+    width: 225px;
+    padding: 12.5px 20px;
+  }
+
+  button[type="submit"] {
+    padding: 11.5px 32.5px;
+    text-transform: uppercase;
+  }
+
+  footer > div div:nth-child(3) span{
+    display: none;
+  }
+
+  footer div div.logo-social div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer div div.logo-social span{
+    display: block;
+    margin-top: 40px;
+    color: #8C8C94;
+    font-weight: 500;
+    text-align: center;
+    font-size: 13px;
+  } 
 }
-
